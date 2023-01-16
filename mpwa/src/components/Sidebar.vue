@@ -1,12 +1,12 @@
 <template>
     <div class="topPadding">
         <div class="vertical">
-        <div>
+        <router-link class="button" to="/">
             Home
-        </div>
-        <div>
+        </router-link>
+        <router-link class="button" to="/Profile">
             Profile
-        </div>
+        </router-link>
         <div>
             About
         </div>
@@ -41,5 +41,12 @@
     }
     .topPadding{
         padding-top:30px;
+    }
+    a, a:visited{
+        text-decoration: none;
+        color:black;        
+    }
+    a:hover {
+        font-size:20px;
     }
 </style>
