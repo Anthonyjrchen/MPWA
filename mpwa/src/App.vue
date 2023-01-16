@@ -1,14 +1,22 @@
+
+
 <template>
   <div class="layout">
+  <link href="https://fonts.cdnfonts.com/css/noah-grotesque" rel="stylesheet">
     <div class = "container a">
       <div class="hr">
-      Welcome to Your Meal Prep Web Application
+      Meal Prep Web Application
     </div>
     </div>
     
     <Sidebar class="b">
       
     </Sidebar>
+    
+    <Recipes class="c">
+      
+    </Recipes>
+
   </div>
   
   
@@ -16,16 +24,21 @@
 </template>
 
 <script>
+
 import Sidebar from './components/Sidebar.vue'
+import Recipes from './components/Recipes.vue'
+
 export default {
   name: 'App',
   components: {
-    Sidebar,
+    Sidebar, Recipes
   },
 }
 </script>
 
 <style>
+@import url('https://fonts.cdnfonts.com/css/noah-grotesque');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,10 +50,10 @@ export default {
   padding-top:10px;
   padding-bottom:10px;
   font-size:x-large;
-  font-family: 'The Moon',sans-serif;
+  font-family: 'Noah Grotesque', sans-serif;
+  font-weight: bolder;
   justify-content: center;
-  border:2px solid black;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color:#e6d9cd;
   height:50px;
   width:100%;
@@ -55,9 +68,6 @@ export default {
   grid-row: row1-start / row3-end;
 }
 
-Sidebar {
-  
-}
 .container {
   padding-right:30px;
   padding-top:5px;
@@ -69,4 +79,5 @@ Sidebar {
   grid-template-columns: [col1-start] 200px [col2-start]auto [col3-start]auto [col4-start]auto [col4-end];
   grid-template-rows:[row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
 }
+
 </style>
