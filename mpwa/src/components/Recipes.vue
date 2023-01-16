@@ -2,7 +2,7 @@
     <div class="recipes">
         <div class="horizontal">
         <div class="images">
-            <img src="testpics/1.png" alt="one">
+            <img src="one" alt="one">
             <img src="testpics/2.png" alt="two">
             <img src="testpics/3.png" alt="three">
             <img src="testpics/4.png" alt="four">
@@ -13,7 +13,17 @@
     
     
 </template>
+
 <script>
+export default {
+    name: 'Recipes',
+    data: function() {
+    return {
+        one: require('./testPics/1.png')
+    }
+    }
+    }
+
 </script>
 
 <style scoped>

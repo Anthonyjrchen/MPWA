@@ -45,7 +45,6 @@ export default {
   padding: 0;
 }
 .hr {
-  
   display:flex;
   padding-top:10px;
   padding-bottom:10px;
